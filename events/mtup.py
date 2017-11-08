@@ -14,6 +14,8 @@ def get_address(event):
 # lots of events only provide the location to the members :(
   return 'unknown'
 
+# TODO: insert events into django db, do some cleanup, etc.
+# printing in format https://wiki.python.org/moin/PythonEventsCalendar#Submitting_an_Event
 for event in events.results:
   print('-------------')
   print(' * name of the event: ' + event['group']['name'] + '/' + event['name'])
